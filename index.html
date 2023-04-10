@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/Calculator/styles/styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-calculator">
+            <form action="" name="calculator">
+                <div class="container-result">
+                    <input type="text" class="result" id="result" autocomplete="off" readonly name="visor" value="0" />
+                </div>
+
+                <div class="container-numbers">
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="button" class="limpar" id="buttonC" onclick="clearNumbers()" value="C" />
+                                <input type="button" class="botaoAux" id="backspace" onclick="deleteNumbers()"
+                                    value="⌫" />
+                                <input type="button" class="botaoAux" id="porcentagem" onclick="fillIn('%')"
+                                    value="%" />
+                                <input type="button" class="division" id="division" onclick="fillIn('/')" value="÷" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="button" class="numero" onclick="fillIn(7)" value="7" />
+                                <input type="button" class="numero" onclick="fillIn(8)" value="8" />
+                                <input type="button" class="numero" onclick="fillIn(9)" value="9" />
+                                <input type="button" class="multiplication" id="multiplication" onclick="fillIn('*')"
+                                    value="x" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="button" class="numero" onclick="fillIn(4)" value="4" />
+                                <input type="button" class="numero" onclick="fillIn(5)" value="5" />
+                                <input type="button" class="numero" onclick="fillIn(6)" value="6" />
+                                <input type="button" class="subtraction" id="subtraction" onclick="fillIn('-')"
+                                    value="-" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="button" class="numero" onclick="fillIn(1)" value="1" />
+                                <input type="button" class="numero" onclick="fillIn(2)" value="2" />
+                                <input type="button" class="numero" onclick="fillIn(3)" value="3" />
+                                <input type="button" class="addition" id="addition" onclick="fillIn('+')" value="+" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="button" class="botaoAux" id="negativo" onclick="maisMenos()" value="+/-" />
+                                <input type="button" class="numero" onclick="fillIn(0)" value="0" />
+                                <input type="button" class="botaoAux" id="point" onclick="fillIn('.')" value="." />
+                                <input type="button" class="equal" id="equal" onclick="calculate()" value="=" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <script src="/Calculator/scripts/script.js"></script>
+</body>
+
+</html>
