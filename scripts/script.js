@@ -27,7 +27,7 @@ function point() {
     document.getElementById("result").value += ".";
 }
 
-// Função para alterar para número positivo ou negativo
+// Funçión para alterar un número positivo ou negativo
 function maisMenos() {
     if (document.getElementById("result").value == "") {
         document.getElementById("result").value = "-";

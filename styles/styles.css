@@ -4,33 +4,35 @@
 }
 
 body {
-  /*background-color: rgb(0 26 255 / 27%);*/
   background-color: rgb(220 0 156 / 40%);
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-calculator {
   width: 400px;
-  height: 620px;
-  background-color: rgb(0 0 0 / 8%);
-  border: 1.3px solid rgb(255 255 255);
-  border-radius: 10px;
+  /*height: 650px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(215, 107, 169, 0.677);
+  border: 0.5px solid rgb(255 255 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 30px;
   padding: 40px;
 }
-/*.container-result {
-    background-color: rebeccapurple;
-  }*/
+
 
 .result {
   width: 100%;
   height: 100px;
-  border: 1.3px solid rgb(255 255 255);
+  border: 1px solid rgb(255 255 255);
   border-radius: 5px;
   background-color: #ffffff40;
   font-size: 40px;
@@ -44,23 +46,23 @@ body {
 .container-numbers {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-numbers > table {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  width: 100%;
+  margin: 25px 0 10px 0;
 }
 
 .container-numbers > table > tbody > tr > td > input[type="button"] {
   width: 65px;
   height: 65px;
-  margin: 12px 10px;
-  border: 2px solid white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   outline: unset;
-  border-radius: 50%;
-  font-size: 20px;
+  border-radius: 6%;
+  font-size: 25px;
   font-weight: 400;
   font-family: sans-serif;
   color: #5f5b5b;
@@ -72,6 +74,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 
 .container-numbers > table > tbody > tr {
@@ -81,7 +84,7 @@ body {
 .container-numbers > table > tbody > tr > td {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 input#division {
